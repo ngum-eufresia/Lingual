@@ -221,6 +221,10 @@ opacity: 0.25;
 
 .programs{
   background-image: url('images/Path\ 1262.svg');
+    padding-bottom: 219px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
   .programs-card{
     
@@ -266,10 +270,11 @@ opacity: 1;
 }
 .trial{
   background: var(--unnamed-color-006ec5) 0% 0% no-repeat padding-box;
-  background: #006EC5 0% 0% no-repeat padding-box;
+  background: #006EC5 0% 0% no-repeat;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 20px;
   opacity: 1;
+  
 }
 .first-trial{
   font-weight: bold;
@@ -285,6 +290,116 @@ opacity: 1;
     font-size: 30px;
   }
 } */
+
+.Rec-img{
+  width: 345px;
+}
+
+.media-scroller{
+  
+  display:grid;
+  grid-template-rows: min-content;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  padding-bottom: 214px;
+  
+}
+
+
+.media-scroller::-webkit-scrollbar {
+  display: none;
+}
+.snap-inline{
+  scroll-snap-align: inline mandatory;
+  gap: 92px;
+
+}
+.media-elementt{
+  border-radius:10px ;
+}
+
+.galery{
+}
+
+.my-galery{
+  padding-inline: 95px;
+}
+
+.working-space{
+  width: 315px;
+}
+
+.colorful-baby{
+
+  width: 300px;
+  clip-path: inset(15% 0% 38% 0%);
+  margin-bottom: -253px;
+  
+}
+.masonry-column {
+  padding: 0 1px;
+}
+
+.masonry-grid > div .thumbnail {
+  margin: 5px 1px;
+}
+
+.short-test{
+  background-image:url('images/Path\ 1265.svg');
+  background-color: #04d4e9;
+  margin-bottom: 24px;
+
+}
+
+.test-but{
+   background-color: #0043A8;
+   color:white;
+ 
+  
+}
+
+.pic-grid {
+  display: grid;
+  block-size: 250px;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-rows: masonry;
+  align-tracks: end, start, end, space-between;
+}
+
+.school-girl{
+ width: 587px;
+  padding-left: 94px;
+}
+.test-text{
+   
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  padding-right: 529px;
+  line-height: 41px;
+}.div-test{
+  padding-top: 172px;
+}
+
+.div-test-but{
+   padding-left: 121px;
+  
+}
+.div-school-girl{
+  position: relative;
+  top:-46px;
+}
+.p-gallery{
+  color: #0043A8;
+  font-size: 34px;
+  font-weight: bold;
+
+}
+
 
 @media (max-width:1400px) {
   .lorem {
@@ -348,8 +463,11 @@ opacity: 1;
     padding-inline: 33px;
   }
 }
-
-
+@media (min-width:1200px) {
+  .programs{
+padding-inline: 244px;
+  }
+}
 /* @media (min-width: 1200px) {
   .learn-card-title {
     font-weight: 900;
@@ -671,12 +789,53 @@ opacity: 1;
   }
 }
 
+@media only screen and (max-width: 1400px) {
+.snap-inline{
+  gap: 135px;
+  }
+ }
+
+@media only screen and (max-width: 1200px) {
+.snap-inline{
+  gap: 187px;
+  }
+ }
+
+@media only screen and (max-width: 992px) {
+.snap-inline{
+  gap: 261px;
+  }
+ }
+@media only screen and (max-width: 768px) {
+.snap-inline{
+  gap: 212px;
+  }
+ }
+ @media only screen and (max-width: 568px) {
+.snap-inline{
+  gap: 283px;
+  }
+ }
+
+  @media only screen and (max-width: 768px) {
+ .my-galery{
+  padding-inline: 20px;
+ }
+}
+ 
 
 /*extra small screen */
 @media only screen and (max-width: 575px) {
   .trans-text{
 font-size: 14px;
 font-weight: 100;
+
+  }
+}
+
+@media only screen and (max-width: 678px) {
+  .trial{
+border-radius:0;
 
   }
 }
@@ -705,6 +864,20 @@ font-weight: 100;
 /* large device */
 @media only screen and (min-width: 992px) {
   .trans-text{
+font-size: 20px;
+
+  }
+}
+@media only screen and (max-width: 992px) {
+.short-test{
+  background-image:none;
+  background-color: #04d4e9;
+  margin-bottom: 24px;
+
+ }
+}
+@media only screen and (max-width: 768px) {
+  .test-text{
 font-size: 20px;
 
   }
